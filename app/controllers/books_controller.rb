@@ -2,6 +2,18 @@ class BooksController < ApplicationController
   def index
     @books = Book.all
   end
+  def edit
+    @book = Book.find(params[:id])
+  end
+  def update
+    @book = Book.find(params[:id])
+    if @book.update_attributes(book_params)
+      flash[:success] = "Book edited."
+      redirect_to books_path
+    else
+      render 'edit'
+    end
+  end
   def create
     @book = Book.new(book_params)
      if @book.save

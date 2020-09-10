@@ -1,0 +1,11 @@
+Edit a book here!
+
+<%= form_for(@book) do |f| %>
+  <%= label(:book, :title) %>
+  <%= text_field(:book, :title) %>
+  <%= label(:book, :author) %>
+  <%= text_field(:book, :author) %>
+  <%= label(:book, :isbn) %>
+  <%= text_field(:book, :isbn) %>
+  <input value="Send" type="submit"/>
+<% end %>
