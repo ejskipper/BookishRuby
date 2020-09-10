@@ -1,0 +1,8 @@
+Create a new book here!
+
+<%= form_for(Book.new) do |f| %>
+  <%= text_field(:book, :title) %>
+  <%= text_field(:book, :author) %>
+  <%= text_field(:book, :isbn) %>
+  <input value="Send" type="submit"/>
+<% end %>
