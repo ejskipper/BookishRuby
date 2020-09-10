@@ -1,1 +1,4 @@
 <h1> <%= @book.title %> </h1>
+<%= form_for (@book), :html => { :method => :delete } do |f| %>
+  <input value="Delete book" type="submit"/>
+<% end %>
