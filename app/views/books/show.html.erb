@@ -6,11 +6,21 @@
 <ul>
   <% if @copies.length >= 1 %>
     <% for copy in @copies %>
-      <li>Copy <%= copy.id %>; currently on loan to <%= copy.borrower %>, due to be returned on <%= copy.due_date %>
+      <% if copy.user_id %>
+        <li>Copy <%= copy.id %>; currently on loan to <%= User.find(copy.user_id).email %>, due to be returned on <%= copy.due_date %> </li>
+        <% if copy.user_id == current_user.id %>
+          <%= link_to 'Return copy', edit_book_copy_path(@book, copy, user_id: nil) %>
+        <% end %>
+      <% else %>
+        <li>Copy <%= copy.id %>; not currently on loan. </li>
+        <%= link_to 'Checkout copy', edit_book_copy_path(@book, copy, current_user.id) %>
+      <% end %>
       <%= form_for [@book, copy], :html => { :method => :delete } do |f| %>
         <input value="Delete copy" type="submit"/>
       <% end %>
-        <%= link_to 'Edit copy', edit_book_copy_path(@book, copy) %>
+        <%#= link_to 'Edit copy', edit_book_copy_path(@book, copy) %>
+      <br/>
+      <br/>
       </li>
     <% end %>
   <% else %>

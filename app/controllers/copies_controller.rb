@@ -6,8 +6,8 @@ class CopiesController < ApplicationController
   end
 
   def new
-    render "./books/copies/new"
     @copy = @book.copies.build
+    render "./books/copies/new"
   end
 
   def show
@@ -51,6 +51,6 @@ class CopiesController < ApplicationController
   end
 
   def copy_params
-    params.require(:copy).permit(:book_id, :borrower, :due_date)
+    params.require(:copy).permit(:book_id, :due_date, :user_id)
   end
 end
