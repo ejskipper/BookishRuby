@@ -2,3 +2,23 @@
 <%= form_for (@book), :html => { :method => :delete } do |f| %>
   <input value="Delete book" type="submit"/>
 <% end %>
+
+<ul>
+  <% if @copies.length >= 1 %>
+    <% for copy in @copies %>
+      <li>Copy <%= copy.id %>; currently on loan to <%= copy.borrower %>, due to be returned on <%= copy.due_date %>
+      <%= form_for [@book, copy], :html => { :method => :delete } do |f| %>
+        <input value="Delete copy" type="submit"/>
+      <% end %>
+        <%= link_to 'Edit copy', edit_book_copy_path(@book, copy) %>
+      </li>
+    <% end %>
+  <% else %>
+    No copies of this book were found
+  <% end %>
+</ul>
+
+<%= link_to 'Add a copy', new_book_copy_path(@book) %>
+</br>
+<%= link_to 'Back to Home', books_path %>
+
