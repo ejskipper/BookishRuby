@@ -3,9 +3,9 @@ Edit a copy here!
 <%= form_for [@book, @copy] do |f| %>
   <%= f.label(:book_id) %>
   <%= f.text_field(:book_id) %>
-  <%= f.label(:borrower) %>
-  <%= f.text_field(:borrower) %>
   <%= f.label(:due_date) %>
   <%= f.text_field(:due_date) %>
+  <%= f.label(:user_id) %>
+  <%= f.text_field(:user_id) %>
   <%= submit_tag("Submit") %>
 <% end %>
