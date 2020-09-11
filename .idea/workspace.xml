@@ -24,9 +24,29 @@
   <component name="ChangeListManager">
     <list default="true" id="e063b081-cabb-4efe-acdc-ce8108e58e41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/books_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/books_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/books/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/book.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/book.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/copy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/copy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/books/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/books/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/boot.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/boot.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/puma.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/puma.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20200909100036_create_books.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200909100036_create_books.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/books_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/books_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/book_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/book_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/copy_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/copy_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +63,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="1hGk2A2OSuNmxsV0vDR3OEODW1V" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,21 +78,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/books" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/books/copies" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\BookishRuby\app\views\books\copies" />
+      <recent name="C:\Work\BookishRuby\app\controllers" />
       <recent name="C:\Work\BookishRuby\app\views\books" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="rake db:migrate" />
+      <command value="puts @copy.errors" />
+      <command value="rails server" />
     </option>
   </component>
-  <component name="RunManager" selected="Rails.Development: BookishRuby">
+  <component name="RunManager" selected="Rails.rails server">
     <configuration name="Development: BookishRuby" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="BookishRuby" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -101,6 +132,25 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rails server" type="RailsRunConfigurationType" factoryName="Rails" temporary="true">
+      <module name="BookishRuby" />
+      <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method v="2" />
     </configuration>
@@ -143,6 +193,11 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Rails.rails server" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -154,7 +209,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599644608926</updated>
       <workItem from="1599644611104" duration="10200000" />
-      <workItem from="1599727068232" duration="7629000" />
+      <workItem from="1599727068232" duration="29058000" />
     </task>
     <servers />
   </component>
@@ -174,26 +229,63 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="680" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599655935461">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1252" y="-957" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599815402670">
+      <screen x="1064" y="-1024" width="1280" height="984" />
     </state>
+    <state x="1252" y="-957" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599815402670" />
     <state x="680" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599655935461" />
-    <state width="723" height="210" key="GridCell.Tab.0.bottom" timestamp="1599669703948">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1238" height="325" key="GridCell.Tab.0.bottom" timestamp="1599818735726">
+      <screen x="1064" y="-1024" width="1280" height="984" />
     </state>
+    <state width="1238" height="325" key="GridCell.Tab.0.bottom/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735726" />
     <state width="723" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599669703948" />
-    <state width="723" height="210" key="GridCell.Tab.0.center" timestamp="1599669703948">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1238" height="325" key="GridCell.Tab.0.center" timestamp="1599818735726">
+      <screen x="1064" y="-1024" width="1280" height="984" />
     </state>
+    <state width="1238" height="325" key="GridCell.Tab.0.center/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735726" />
     <state width="723" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599669703948" />
-    <state width="723" height="210" key="GridCell.Tab.0.left" timestamp="1599669703947">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1238" height="325" key="GridCell.Tab.0.left" timestamp="1599818735726">
+      <screen x="1064" y="-1024" width="1280" height="984" />
     </state>
+    <state width="1238" height="325" key="GridCell.Tab.0.left/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735726" />
     <state width="723" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599669703947" />
-    <state width="723" height="210" key="GridCell.Tab.0.right" timestamp="1599669703948">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1238" height="325" key="GridCell.Tab.0.right" timestamp="1599818735726">
+      <screen x="1064" y="-1024" width="1280" height="984" />
     </state>
+    <state width="1238" height="325" key="GridCell.Tab.0.right/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735726" />
     <state width="723" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599669703948" />
+    <state width="1238" height="325" key="GridCell.Tab.1.bottom" timestamp="1599818735728">
+      <screen x="1064" y="-1024" width="1280" height="984" />
+    </state>
+    <state width="1238" height="325" key="GridCell.Tab.1.bottom/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735728" />
+    <state width="1238" height="325" key="GridCell.Tab.1.center" timestamp="1599818735727">
+      <screen x="1064" y="-1024" width="1280" height="984" />
+    </state>
+    <state width="1238" height="325" key="GridCell.Tab.1.center/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735727" />
+    <state width="1238" height="325" key="GridCell.Tab.1.left" timestamp="1599818735727">
+      <screen x="1064" y="-1024" width="1280" height="984" />
+    </state>
+    <state width="1238" height="325" key="GridCell.Tab.1.left/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735727" />
+    <state width="1238" height="325" key="GridCell.Tab.1.right" timestamp="1599818735727">
+      <screen x="1064" y="-1024" width="1280" height="984" />
+    </state>
+    <state width="1238" height="325" key="GridCell.Tab.1.right/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735727" />
+    <state width="1238" height="325" key="GridCell.Tab.2.bottom" timestamp="1599818735729">
+      <screen x="1064" y="-1024" width="1280" height="984" />
+    </state>
+    <state width="1238" height="325" key="GridCell.Tab.2.bottom/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735729" />
+    <state width="1238" height="325" key="GridCell.Tab.2.center" timestamp="1599818735728">
+      <screen x="1064" y="-1024" width="1280" height="984" />
+    </state>
+    <state width="1238" height="325" key="GridCell.Tab.2.center/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735728" />
+    <state width="1238" height="325" key="GridCell.Tab.2.left" timestamp="1599818735728">
+      <screen x="1064" y="-1024" width="1280" height="984" />
+    </state>
+    <state width="1238" height="325" key="GridCell.Tab.2.left/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735728" />
+    <state width="1238" height="325" key="GridCell.Tab.2.right" timestamp="1599818735729">
+      <screen x="1064" y="-1024" width="1280" height="984" />
+    </state>
+    <state width="1238" height="325" key="GridCell.Tab.2.right/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599818735729" />
     <state width="200" height="457" key="HiddenNamespacesPopup" timestamp="1599655760454">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -202,10 +294,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="526" y="34" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599648161215" />
-    <state x="1741" y="-797" width="672" height="809" key="run.anything.popup" timestamp="1599733153526">
+    <state x="1256" y="-803" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599817852108">
       <screen x="1064" y="-1024" width="1280" height="984" />
     </state>
-    <state x="1741" y="-797" width="672" height="809" key="run.anything.popup/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599733153526" />
+    <state x="1256" y="-803" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599817852108" />
+    <state x="1529" y="-830" width="672" height="809" key="run.anything.popup" timestamp="1599815514152">
+      <screen x="1064" y="-1024" width="1280" height="984" />
+    </state>
+    <state x="1529" y="-830" width="672" height="809" key="run.anything.popup/0.0.1536.824/1064.-1024.1280.984@1064.-1024.1280.984" timestamp="1599815514152" />
     <state x="812" y="190" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599648487840" />
     <state x="816" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1599665853639">
       <screen x="0" y="0" width="1536" height="824" />

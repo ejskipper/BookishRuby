@@ -1,6 +1,7 @@
 <h1>My Books</h1>
 <ul>
   <% for book in @books %>
-    <li><%= book.title %></li>
+    <li><%= link_to book.title, book_path(book) %>, <%= book.author %>; ISBN: <%= book.isbn %></li>
   <% end %>
 </ul>
+<%= link_to 'Add a book', new_book_path  %>
